@@ -1,0 +1,20 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 320px;
+    position: relative;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    /* background-color: #393839; */
+    border: 0px solid transparent;
+    color: rgb(255, 132, 0);
+}
