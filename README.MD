@@ -9,18 +9,18 @@ A basic Tic-Tac-Toe game developed using HTML, CSS, and JavaScript. This game al
 - **Interactive UI**: A simple and responsive design for a smooth user experience.
 
 ## Usage
-Open index.html in a web browser.
-Click on a square to place your symbol ('X' or 'O').
-Players take turns until there is a winner or a draw.
-Use the reset button to start a new game.
+- Open index.html in a web browser.
+- Click on a square to place your symbol ('X' or 'O').
+- Players take turns until there is a winner or a draw.
+- Use the reset button to start a new game.
 
 ## Contribution
 Contributions are welcome! Please follow these steps to contribute:
-Fork the repository.
-Create a new branch (git checkout -b feature/your-feature-name).
-Commit your changes (git commit -am 'Add some feature').
-Push to the branch (git push origin feature/your-feature-name).
-Create a new Pull Request.
+1. Fork the repository.
+2. Create a new branch (git checkout -b feature/your-feature-name).
+3. Commit your changes (git commit -am 'Add some feature').
+4. Push to the branch (git push origin feature/your-feature-name).
+5. Create a new Pull Request.
 
 ## License
 This project is licensed under the MIT License. For the full text of the license, please refer to the MIT License.
