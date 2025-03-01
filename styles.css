@@ -1,9 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
 .board {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    width: 320px;
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 0;
 }
 
 .cell {
@@ -13,8 +30,66 @@
     justify-content: center;
     align-items: center;
     font-size: 80px;
-    font-family: 'Times New Roman', Times, serif;
-    /* background-color: #393839; */
-    border: 0px solid transparent;
     color: rgb(255, 132, 0);
+    cursor: pointer;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(4),
+.cell:nth-child(5) {
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+}
+
+.cell:nth-child(3),
+.cell:nth-child(6) {
+    border-bottom: 4px solid black;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8) {
+    border-right: 4px solid black;
+}
+
+
+.scorecard {
+    text-align: left;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+#winning-line {
+    position: absolute;
+    height: 4px;
+    background-color: red;
+    width: 0;
+    transform-origin: left center;
+    transition: width 0.3s ease-in-out;
+}
+
+
+
+#reset {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+    display: block;
+    border-radius: 5px;
 }
